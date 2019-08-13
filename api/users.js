@@ -2,8 +2,6 @@
 const url = require('url')
 const MongoClient = require('mongodb').MongoClient
 
-const dbName = 'UserDb'
-
 // Create cached connection variable
 let cachedDb = null
 
@@ -44,6 +42,7 @@ module.exports = async(req, res) => {
 
         // Select the users collection from the database
         const users = await collection.find({}).toArray()
+        console.log('users: ', users);
 
         // Respond with a JSON string of all users in the collection
         res.status(200).json({ users });

@@ -1,7 +1,8 @@
 {
     "name": "node-mongo-api",
     "version": 2,
-    "env": {
-        "MONGODB_URI": "mongodb+srv://userdb-admin:SeAO2tuyWJ1afc0w@iamongocloud-wzhlb.azure.mongodb.net/UserDb?retryWrites=true&w=majority"
-    }
+    "routes": [{
+        "src": "/",
+        "dest": "https://status-page.c1i44.now.sh/403.html"
+    }]
 }
