@@ -4,5 +4,8 @@
     "routes": [{
         "src": "/",
         "dest": "https://status-page.c1i44.now.sh/403.html"
+    }, {
+        "src": "/users",
+        "dest": "/api/users.js"
     }]
 }
