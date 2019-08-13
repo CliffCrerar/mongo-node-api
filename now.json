@@ -3,7 +3,7 @@
     "version": 2,
     "routes": [{
         "src": "/",
-        "dest": "***************/403.html"
+        "dest": "https://status-page.now.sh/403.html"
     }, {
         "src": "/users",
         "dest": "/api/users.js"
